@@ -1,0 +1,130 @@
+/* Global */
+body {
+  background-color: azure;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #e3e9f0);
+  margin: 0;
+  padding: 0;
+
+}
+
+/* App container */
+.app-container {
+  max-width: 520px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 40px;
+  color: #22045b;
+  font-weight: 600;
+}
+
+/* Form */
+.form-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-container input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #dcdfe4;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.form-container input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.15);
+}
+
+/* Button */
+.form-container button {
+  padding: 12px 16px;
+  border: none;
+  background: linear-gradient(135deg, #a5ccf7, #97c6f6);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.form-container button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+}
+
+/* Total */
+.total-expense {
+  margin: 15px 0;
+  color: #333;
+  font-weight: 500;
+  background: #f7f9fc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Expense list */
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Expense item */
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e7ebf5;
+  padding: 12px 15px;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: 1px solid #eee;
+}
+
+.expense-item:hover {
+  background: #f1f5fb;
+  transform: translateY(-2px);
+}
+
+/* Title */
+.expense-item span:first-child {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Amount */
+.expense-item span:nth-child(2) {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #d9363e;
+  transform: scale(1.05);
+}
